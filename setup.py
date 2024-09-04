@@ -3,9 +3,9 @@ import os
 import io
 
 # Package meta-data.
-NAME = ""
-VERSION = ""
-DESCRIPTION = ""
+NAME = "package"
+VERSION = "0.0.1"
+DESCRIPTION = "package description"
 AUTHOR = ""
 AUTHOR_EMAIL = ""
 PYTHON_REQUIRES = ""
