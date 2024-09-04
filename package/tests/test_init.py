@@ -1,5 +1,5 @@
 import pytest
-from insightsapi import get_asset_path
+from package import get_asset_path
 
 
 @pytest.mark.parametrize("input_name, expected_output", [
