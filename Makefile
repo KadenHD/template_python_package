@@ -33,13 +33,6 @@ init:
 	python3 -m venv $(VENV)
 	$(ACTIVATE) $(PIP) install .[dev]
 
-	@if [ ! -f "$(ENV_FILE)" ]; then \
-		echo "HOST=\"127.0.0.1\" # str" > $(ENV_FILE) && \
-		echo "PORT=8000 # int" >> $(ENV_FILE) && \
-		echo "RELOAD=1 # 0 or 1" >> $(ENV_FILE) && \
-		echo "ORIGINS=[\"*\"] # list[str]" >> $(ENV_FILE); \
-	fi
-
 # Run the Package
 run: ## run the package
 run: _is_venv
